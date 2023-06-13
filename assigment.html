@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid grey;
+            width: 500px;
+            padding: 20px;      
+        }        
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="val" placeholder="enter a number"> <br><br>
+        <button onclick="gradeCalculator()">Check Result</button>
+    </div>
+
+
+    <script>
+        function gradeCalculator() {
+            const inputVal = document.getElementById("val").value;
+            if (inputVal >= 90 && inputVal <= 100) {
+                document.write("You Achieved:A");
+            }
+            else if (inputVal >= 80 && inputVal < 90) {
+                document.write("You Achieved:B");
+            }
+            else if (inputVal >= 70 && inputVal < 80) {
+                document.write("You Achieved:C");
+            }
+            else if (inputVal >= 60 && inputVal < 70) {
+                document.write("You Achieved:D");
+            }
+            else if (inputVal >= 0 && inputVal <= 60) {
+                document.write("You Achieved:F");
+            }
+            else if (!(inputVal >= 0) && !(inputVal <= 100)) {
+                document.write("Not a number")
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
