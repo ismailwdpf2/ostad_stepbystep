@@ -7,7 +7,7 @@
     <title>arry</title>
 </head>
 <body>
-<h3>arry: push, pop,reverse, sort, slice</h3>
+<h3>arry: push, pop,reverse, sort, slice, splice</h3>
     <script>
         var numarry = [20, 30, 40, 50, 60, 70, 80, 90]
         var result = numarry.reverse();
@@ -23,7 +23,14 @@
         document.write(numarry+"<br/>");
 
         var result = numarry.slice(2,6);
-        document.write(result+"<br/>");      
+        document.write(result+"<br/>");
+
+          // numarry.splice(index, remove, add)
+        numarry.splice(2,3);
+        document.write(numarry+"<br/>")
+        
+        numarry.splice(2,0,45);
+        document.write(numarry)
 
     </script>
 </body>
